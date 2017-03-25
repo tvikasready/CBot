@@ -26,4 +26,6 @@ class SynonymList(APIView):
 class SynonymDetail(RetrieveAPIView):
    queryset = Synonym.objects.all()
    serializer_class = SynonymSerializer
-        
+
+
+

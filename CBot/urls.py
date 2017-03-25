@@ -6,6 +6,6 @@ admin.autodiscover()
 
 urlpatterns = (
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.SynonymList.as_view()),
+    url(r'synonyms/', views.SynonymList.as_view()),
     url(r'^(?P<pk>\d+)/$', views.SynonymDetail.as_view(),name='detail'),
     )
